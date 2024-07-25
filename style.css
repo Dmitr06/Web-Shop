@@ -1,0 +1,266 @@
+*,*:after,*:before{
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+.header{
+  background-color: #FFFFFF;
+  padding-top: 45px;
+  padding-bottom: 142px;
+}
+.header__top{
+  margin-bottom: 100px;
+}
+.container{
+  max-width: 1140px;
+  margin: auto;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.logo{
+  font-size: 18px;
+  font-weight:800;
+}
+.nav{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.nav__item{
+  margin-right: 20px;
+  font-size: 14px;
+}
+.nav__link{
+  color: #000;
+  text-decoration: none;
+}
+.nav__item:last_child{
+  margin-right: 0;
+}
+.phone{
+  font-size: 16px;
+  font-weight:800;
+  color: #000;
+  text-decoration: none;
+}
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-content__text{
+  flex-basis: 40%;
+}
+.header-contect__image{
+  max-width: 700px;
+}
+.header-content__title{
+  font-size: 50px;
+  margin-bottom: 23px;
+}
+.header-content__description{
+  font-size: 17px;
+  line-height: 160%;
+  margin-bottom: 40px;
+}
+.button{
+  background-color: #ff6c6c;
+  border: none;
+  font-size: 18px;
+  line-height: 160%;
+  color:#FFFFFF;
+  padding: 15px 56px;
+  Border-Radius: 4px;
+}
+.button--shadow{
+  box-shadow: 0px 10px 25px rgba(255, 108, 108, 0.5);
+}
+.section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section__tittle{
+  margin-bottom: 50px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+  flex-basis: 25%;
+  background: #F8F8F8;
+  border-shadow: 0px 4px 4px rgba(104, 104, 104, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  padding: 25px;
+  width: 358px;
+}
+.goods__card{
+  margin-bottom: 30px;
+}
+.card__image{
+  max-width: 300px;
+  margin-bottom: 28px;
+}
+.card__text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.card__title{
+  font-size: 16px;
+  text-align: left;
+  max-width: 200px;
+  min-height: 75px;
+}
+.card__price{
+  font-size: 25px;
+  margin-bottom: 28px;
+}
+.card__button{
+  width: 100%;
+}
+.review-cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.review-card{
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+  border-radius: 10px;
+  padding: 20px 30px;
+  flex-basis: 24%;
+}
+.review-card__tittle{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.review-card__text{
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer{
+  background: #E5E5E5;
+}
+.contacts{
+  display: flex;
+  justify-content: space-between;
+}
+.form{
+  flex-basis:47%;
+}
+.map{
+  flex-basis: 50%;
+}
+.input{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+  border-radius: 5px;
+  border: none;
+  padding: 25px 30px;
+  font-size: 14px;
+}
+.form__input{
+  width: 47%;
+  margin-bottom: 30px;
+}
+.form__inputs{
+  display: flex;
+  justify-content: space-between;
+}
+.form__textarea{
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+}
+.form__buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social{
+  display: flex;
+}
+.social__link{
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+@media (max-width: 1200px){
+  .container{
+    max-width: 960px;
+  }
+  .header-content__title{
+    font-size: 26px;
+  }
+  .card{
+    flex-basis: 48%;
+  }
+  .card__image{
+    width: 100px;
+  }
+  .review-card{
+    flex-basis: 48%;
+  }
+  .review__card{
+    margin-bottom: 30px;
+  }
+  .button{
+    font-size: 14px;
+    padding: 15px 40px;
+  }
+}
+@media (max-width: 990px){
+  .container{
+    max-width: 760px;
+  }
+  .header-content{
+    flex-direction: column;
+  }
+  .header-content__description{
+    max-width: 500px;
+  }
+  .contacts{
+    flex-direction: column;
+  }
+  .contacts__form{
+    margin-bottom: 30px;
+  }
+  .review-card{
+    margin-right: 35px;
+  }
+}
+@media (max-width: 768px){
+   .container{
+    max-width: 90%;
+  }
+  .top{
+    flex-direction: column;
+  }
+  .header-content{
+    text-align: center;
+  }
+  .header-content__title{
+    font-size: 24px;
+  }
+  .header-content__description{
+    font-size: 14px;
+  }
+  .header-content__image{
+    max-width: 80%;
+  }
+  .card{
+    flex-basis: 100%;
+  }
+}
