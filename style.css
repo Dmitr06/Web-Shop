@@ -1,8 +1,14 @@
 *,*:after,*:before{
   box-sizing: border-box;
 }
-.center-align {
+.center-align-items {
   align-items: center !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 body{
   font-family: sans-serif;
@@ -26,7 +32,7 @@ body{
 }
 .top{
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
   justify-content: space-between;
   margin: 0;
 }
@@ -40,14 +46,11 @@ body{
 }
 .logopic {
   width: 120px;
-  /*display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;*/
 }
 .center_header {
-  max-width: 100%;
   flex-basis: 100%;
+  max-width: 100%;
+  padding-left: 30px;
 }
 .nav{
   list-style: none;
@@ -119,7 +122,7 @@ body{
 .card{
   flex-basis: 25%;
   background: #F8F8F8;
-  border-shadow: 0px 4px 4px rgba(104, 104, 104, 0.1);
+  /* border-shad: 0px 4px 4px rgba(104, 104, 104, 0.1); */
   border-radius: 5px;
   text-align: center;
   padding: 25px;
