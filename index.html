@@ -9,7 +9,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <header class="header">
-  <div class="container">
+  <div class="col_auto container">
     <div class="top">
       <div class="logo">
         <img src="img/logo.png" alt="" class="logopic">
@@ -20,7 +20,7 @@
           <div class="row center-align-items top_left_center_header" style="justify-content: space-between;">
             <div class="col_auto row address">
               <img style="display: inline-block; margin-right:5px; margin-left:15px" src="img/address.svg" alt="">
-              <div style="color: #000" class="daichai-city" onclick="nc_fav.modal.show( 'set_location' );">Москва</div>
+              <div style="color: #000" class="daichai-city" onclick="">Москва</div>
             </div>
             <div class="col_auto phone_top_left_center_header">
               <a href="tel: +78002000600" class="phone">8 800 2000 600</a>
@@ -36,18 +36,20 @@
               </ul>
           </div>
         </div>
-        <div class="right_center_header">
+        <div class="col_auto right_center_header">
           <div class="row center-align-items up_right_center_header">
-            <div class="col_auto sign_reg">
-              <img src="img/user.svg" alt="" class="pic_sign"> 
-              <a class="sign__link" href="#">Вход</a>
+            <div class="col_auto sign_reg" style="display: flex; align-items: center;">
+              <img src="img/user.svg" alt="" class="pic_sign" style="height: 35px;"> 
+              <a class="links_style ssign__link" href="#">Вход</a>
             </div>
-            <div class="basket">
-              корзина
+            <div class="basket" style="display: flex; align-items: center;">
+              <img src="img/basket.svg" alt="" style="height: 35px;">
+              <a class="links_style basket__link" href="#">Коризна</a>
             </div>
           </div>
-          <div class="down_right_center_header">
-
+          <div class="down_right_center_header" style="display: flex; align-items: center;">
+            <input type="text" name="search_query" placeholder="Поиск" value="" style="margin-right: 10px; font-size: 16px;">
+            <button><img src="img/loop.svg" alt=""></button>
           </div>
         </div>
       </div>

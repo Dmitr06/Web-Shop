@@ -15,6 +15,11 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+.links_style {
+  margin-left: 10px;
+  color: #000;
+   text-decoration: none;
+}
 body{
   font-family: sans-serif;
   margin: 0;
@@ -44,6 +49,7 @@ body{
   flex-direction: column;
   align-items:center;
   margin-right: 34px;
+  font-family: cursive;
 }
 .logopic {
   width: 120px;
@@ -53,7 +59,7 @@ body{
   justify-content: space-between;
   flex-grow: 1;
 }
-.left_center_header {
+.left_center_header, .right_center_header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,10 +71,12 @@ body{
   margin: 0;
   display: flex;
   max-width: 100%;
+
 }
 .nav__item{
+  font-family: sans-serif;
   margin-right: 20px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .nav__link{
   color: #000;
