@@ -27,3 +27,10 @@ $('.review-cards').slick({
     }     
   ]
 });
+$('.goods__card').hover(
+  function() {
+    $('.goods__card').css('border', 'solid blue')
+  }, function() {
+    $('.goods__card').removeAttr('style')
+  }
+);
