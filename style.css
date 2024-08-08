@@ -188,8 +188,11 @@ body{
 }
 .review-cards{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  justify-items: stretch;
+  max-width: 60%;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 .review-card{
   background: #FFFFFF;
@@ -198,7 +201,7 @@ body{
   box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
   border-radius: 10px;
   padding: 20px 30px;
-  flex-basis: 24%;
+  flex-basis: 35%;
 }
 .review-card__image{
   height: 100px;
@@ -210,6 +213,8 @@ body{
 .review-card__text{
   font-size: 14px;
   line-height: 21px;
+  height: 40px;
+  /* width: 200px; */
 }
 .footer{
   background: #E5E5E5;
@@ -262,6 +267,7 @@ body{
   height: 20px;
   width: 20px;
 }
+
 
 /* @media (max-width: 1200px){
   .container{
