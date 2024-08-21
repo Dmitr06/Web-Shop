@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Личный кабинт</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        input {
+            display: block; 
+            font-size: 18px; 
+            margin-top: 10px;
+            outline: none; 
+            border-radius: 5px; 
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        .forward {
+            display: flex; 
+            justify-content: center; 
+            height: 100%; 
+            width: 100%; 
+            background-color: aquamarine;
+        }
+        .for_block {
+            margin: auto;
+            padding: 10px;
+            width: 90%;
+            min-width: 250px;
+            max-width: 350px;
+        }
+    </style>
+    <script type='text/javascript'>
+        document.addEventListener('DOMContentLoaded', function(){
+            let btn = document.querySelector('input[type=submit]');
+            btn.addEventListener('click', async function(event){
+                event.preventDefault();
+                let username = document.querySelector('input[name=username]').value;
+                let password = document.querySelector('input[name=password]').value;
+                let response = await fetch ("/login", {
+                    method: "POST",
+                    headers: {'Content-Type': 'application/json;charset=utf-8'},
+                    body: `{"username": "${username}", "password": "${password}"}`
+                });
+                let response_text = await response.json();
+                if (response_text.success){
+                    let body = document.querySelector('body');
+                    body.style.backgroundColor = "white";
+                    body.style.display = "block";
+                    body.innerHTML = response_text.massage;
+                }                
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="forward">
+        <form class="for_block" method="post" action="/login">
+            <input type="text" name="username" \>
+            <input type="password" name="password" \>
+            <input type="submit" value="Войти" \>
+        </form>
+    </div>
+</body>
+</html>
